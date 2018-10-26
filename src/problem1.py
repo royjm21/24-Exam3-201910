@@ -89,12 +89,12 @@ def problem1(numbers):
     # TODOne: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-    total = 0
+
     for j in range(len(numbers)):
-        for k in range(len(numbers)//3, 2*len(numbers)//3 + 1):
-            if numbers[k] % 3 == 0:
+        total = 0
+        for k in range(len(numbers)//3, 2*len(numbers)//3):
                 total += numbers[k]
-            return total
+        return total
 ###############################################################################
 # Our tests use the following to print error messages in red.
 # Do NOT change it.  You do NOT have to do anything with it.
