@@ -2,9 +2,9 @@
 Exam 3, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  October 2018.
+         their colleagues and Jeremy Roy.  October 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # TODOne: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -86,11 +86,19 @@ def problem1(numbers):
       :type numbers:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # TODOne: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
-
+    sum = 0
+    for j in range(len(numbers)):
+        for k in range(len(numbers)):
+            if numbers[k] % 3 == 0:
+                sum += numbers[k]
+        if j < len(numbers) / 3:
+            sum -= numbers[k]
+        elif j > 2*len(numbers) / 3:
+            sum -= numbers[k]
+        return sum
 ###############################################################################
 # Our tests use the following to print error messages in red.
 # Do NOT change it.  You do NOT have to do anything with it.

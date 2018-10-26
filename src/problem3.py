@@ -2,11 +2,11 @@
 Exam 3, problem 3.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.  October, 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Jeremy Roy.  October, 2018.
+"""  # TODOne: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import testing_helper
-
+import time
 
 def main():
     """ Calls the   TEST   functions in this module. """
@@ -226,6 +226,14 @@ def problem3(seq_of_seq):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    for j in range(len(seq_of_seq)):
+        for k in range(len(seq_of_seq[j])):
+            count = 0
+            if is_prime(seq_of_seq[j][k]) is True:
+                count += 1
+                return seq_of_seq[j]
+            elif j == len(seq_of_seq):
+                return -1
 
 
 ###############################################################################
