@@ -6,7 +6,7 @@ Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
 """  # TODOne: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import testing_helper
-import time
+
 
 def main():
     """ Calls the   TEST   functions in this module. """
