@@ -232,8 +232,10 @@ def problem3(seq_of_seq):
             if is_prime(seq_of_seq[j][k]) is True:
                 count += 1
                 return seq_of_seq[j]
-            elif j == len(seq_of_seq):
+            if j == len(seq_of_seq):
                 return -1
+
+
 
 
 ###############################################################################
